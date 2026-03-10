@@ -19,7 +19,7 @@ function RegistrationForm({ formData, setFormData }) {
   return (
    <form 
   onSubmit={handleSubmit} 
-  className="w-full max-w-md mx-auto bg-white p-8 rounded-lg shadow-md"
+  className="w-full max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg"
 >
   <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
     Registration Form
@@ -29,34 +29,38 @@ function RegistrationForm({ formData, setFormData }) {
     type="text"
     name="name"
     placeholder="Full Name"
+    required
     value={formData.name}
     onChange={handleChange}
-    className="w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+    className="w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
   />
 
   <input
     type="email"
     name="email"
     placeholder="Email"
+    required
     value={formData.email}
     onChange={handleChange}
-    className="w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+    className="w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
   />
 
   <input
-    type="text"
+    type="number"
     name="phone"
     placeholder="Phone"
     value={formData.phone}
     onChange={handleChange}
-    className="w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+    required
+    className="w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
   />
 
   <select
     name="ticket"
     value={formData.ticket}
+    required
     onChange={handleChange}
-    className="w-full mb-6 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+    className="w-full mb-6 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
   >
     <option>Standard</option>
     <option>VIP</option>

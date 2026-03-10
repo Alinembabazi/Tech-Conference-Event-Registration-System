@@ -6,7 +6,7 @@ function EventInfo() {
   const navigate = useNavigate();
 
   return (
-    <div className="p-10    shadow-lg rounded-lg">
+    <div className="p-10 shadow-lg rounded-lg">
       <div className="bg-gray-900 w-full justify-center p-4 max-w-4xl mx-auto rounded-lg text-white mx-auto space-y-3">
       <h1 className="text-2xl font-bold p-4 text-center ">Tech Innovation Conference 2026</h1>
 
