@@ -1,34 +1,3 @@
-// import { useEffect, useState } from "react";
-
-// function MyRegistration() {
-
-//   const [data, setData] = useState(null);
-
-//   useEffect(() => {
-//     const saved = JSON.parse(localStorage.getItem("registration"));
-//     setData(saved);
-//   }, []);
-
-//   if (!data) {
-//     return <p>No registration found.</p>;
-//   }
-
-//   return (
-//     <div className="space-y-4 items-center bg-gray-700 border p-4">
-
-//       <h2>Your Registration</h2>
-
-//       <label>Name:<input type="text" value={data.name} readOnly /></label> <br />
-//       <label>Email:<input type="email" value={data.email} readOnly /></label><br />
-//       <label>Phone:<input type="tel" value={data.phone} readOnly /></label><br />
-//       <label>Ticket:<input type="text" value={data.ticket} readOnly /></label>
-//       <label>Notes:<textarea value={data.notes} readOnly /></label>
-
-//     </div>
-//   );
-// }
-
-// export default MyRegistration;
 import { useEffect, useState } from "react";
 import React from "react";
 
